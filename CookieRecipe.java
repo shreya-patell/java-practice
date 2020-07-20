@@ -1,5 +1,3 @@
-package com.company;
-
 public class CookieRecipe {
     public static void main(String[] args) {
         System.out.println("This is the procedure for a cookie");
