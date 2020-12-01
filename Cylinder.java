@@ -1,28 +1,29 @@
 package com.company;
 
-public class Sphere extends Shape {
-    private double radius;  //radius in feet
+public class Cylinder extends Shape {
+    private double radius;
+    private double height;
 
     //----------------------------------
-    //  Constructor: Sets up the sphere.
+    //  Constructor: Sets up the cylinder.
     //----------------------------------
-    public Sphere(double r){
-        super("Sphere");
+    public Cylinder(double r, double h){
+        super("Cylinder");
         radius = r;
+        height = h;
     }
     //-----------------------------------------
     //  Returns the surface area of the sphere.
     //-----------------------------------------
     public double area(){
-        return 4*Math.PI*radius*radius;
+        return Math.PI*radius*radius*height;
     }
 
     //-----------------------------------
     //  Returns the sphere as a String.
     //-----------------------------------
     public String toString(){
-        return super.toString() + " of radius " + radius;
+        return super.toString() + " of radius " + radius + " of height " + height;
     }
 
 }
-
